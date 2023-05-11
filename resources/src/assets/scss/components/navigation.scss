@@ -1,0 +1,38 @@
+.nav-list {
+  display: flex;
+  justify-content: end;
+  column-gap: 80px;
+
+    @media (max-width: 1170px) {
+        column-gap: 50px;
+    }
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
+
+    &.active {
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        margin-top: 135px;
+        text-align: center;
+    }
+}
+
+.nav-link {
+    font-size: 18px;
+    line-height: 22px;
+    color: #070422;
+    transition: all 0.15s ease;
+
+  &:hover {
+    color: #2E58FF;
+  }
+
+    &.active {
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+}

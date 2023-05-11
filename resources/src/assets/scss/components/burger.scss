@@ -1,0 +1,135 @@
+//.burger {
+//    display: none;
+//}
+//
+//@media (max-width: 992px) {
+//    .burger {
+//        margin-top: 10px;
+//        display: flex;
+//        flex-direction: column;
+//        row-gap: 6px;
+//        position: relative;
+//        width: 40px;
+//        height: 40px;
+//        cursor: pointer;
+//        z-index: 150;
+//
+//        svg {
+//            margin-top: 5px;
+//        }
+//    }
+//
+//    .burger span {
+//        width: 100%;
+//        height: 5px;
+//        transition: all 0.15s ease 0s;
+//
+//        svg {
+//            height: 100%;
+//        }
+//    }
+//
+//    .burger-span-top.active {
+//        transform: rotate(45deg);
+//        transform-origin: left 17px;
+//        fill: #CACBFF;;
+//    }
+//
+//    .burger-span-center.active {
+//        display: none;
+//    }
+//
+//    .burger-span-bottom.active {
+//        transform: rotate(-45deg);
+//        transform-origin: center 17px;
+//        fill: #CACBFF;;
+//    }
+//}
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+
+
+    .burger {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 6px;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        z-index: 150;
+
+        @media (max-width: 480px) {
+            position: fixed;
+            right: 25px;
+        }
+
+        &.active {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+        }
+    }
+
+    .burger span {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        transition: all 0.15s ease 0s;
+    }
+
+    .burger-span-top.active {
+        transform: rotate(45deg);
+        transform-origin: -1px 12px;
+        fill: #F8F7FF;
+    }
+
+    .burger-span-center.active {
+        display: none;
+    }
+
+    .burger-span-bottom.active {
+        transform: rotate(-45deg);
+        transform-origin: 13px 22px 0;
+        fill: #F8F7FF;
+    }
+
+    //.burger::before, .burger::after {
+    //    content: '';
+    //    background-color: #001F43;
+    //    position: absolute;
+    //    width: 100%;
+    //    height: 3px;
+    //    left: 0;
+    //    transition: all 0.15s ease 0s;
+    //}
+    //
+    //.burger::before {
+    //    top: 2px;
+    //}
+    //
+    //.burger.active::before {
+    //    transform: rotate(45deg);
+    //    top: 9px;
+    //    background-color: #9e9e9e;
+    //}
+    //
+    //.burger.active::after {
+    //    transform: rotate(-45deg);
+    //    bottom: 9px;
+    //    background-color: #9e9e9e;
+    //}
+
+    //.burger.active span {
+    //    transform: scale(0);
+    //}
+    //
+    //.burger::after {
+    //    bottom: 0;
+    //}
+}

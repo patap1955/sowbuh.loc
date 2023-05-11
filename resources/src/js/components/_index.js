@@ -1,0 +1,6 @@
+import './burger'
+import './fixedMenu'
+import './scroll'
+import './pop-ap-services'
+import './antispam'
+import './animate'

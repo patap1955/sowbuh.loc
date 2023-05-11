@@ -1,0 +1,14 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    &__item {
+        background: url("/assets/img/icons/stare.svg") no-repeat left top;
+        padding-left: 33px;
+        font-family: Montserrat;
+        font-size: 17px;
+        line-height: 140%;
+        color: #070422;
+    }
+}

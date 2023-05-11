@@ -1,0 +1,67 @@
+.fixedMenuTop {
+    display: none;
+    transform: translateY(-80px);
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(194, 196, 199, 0.5);
+    transition: transform 2s ease ;
+}
+
+.fixedMenuTop.navbar_scrolled {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: block;
+    transform: translateY(0px);
+    animation-name: fadeInNavbar;
+    animation-duration: 1s;
+}
+
+@keyframes fadeInNavbar {
+    from {
+        opacity: 0;
+        top: -90px;
+    }
+
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.fixedMenu {
+    padding-top: 21.5px;
+    padding-bottom: 21.5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__nav {
+        @media (max-width: 1000px) {
+            display: none;
+        }
+    }
+
+    &__phone {
+        a {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 25px;
+            color: #094BAD;
+        }
+
+        &.active {
+            display: none;
+        }
+    }
+
+    &__logo {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}

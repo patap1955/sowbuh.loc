@@ -1,0 +1,69 @@
+#footer {
+    margin-top: 100px;
+    background: #2F2D4F;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.footer {
+    &__title {
+        color: #ffffff;
+    }
+
+    &__logo {
+        margin-top: 80px;
+
+        @media (max-width: 555px) {
+            text-align: center;
+        }
+    }
+
+    &__info {
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 880px) {
+           flex-direction: column;
+           align-items: center;
+            row-gap: 10px;
+        }
+
+        &-copy {
+            font-size: 16px;
+            line-height: 21px;
+            color: #FFFFFF;
+        }
+
+        &-politics {
+            font-size: 16px;
+            line-height: 21px;
+            color: #FFFFFF;
+            transition: all .3s ease;
+
+            &:hover {
+                color: #1AE5BE;
+            }
+        }
+
+        &-developer {
+            font-size: 16px;
+            line-height: 21px;
+            color: #FFFFFF;
+
+            a {
+                color: #FFFFFF;
+                transition: color .15s ease;
+
+                &:hover {
+                    color: #1AE5BE;
+                }
+            }
+
+            @media (max-width: 555px) {
+                margin-top: 30px;
+            }
+        }
+    }
+}
